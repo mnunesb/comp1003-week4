@@ -63,8 +63,8 @@
 					<input type="radio" name="ccType" id="mc" value="MasterCard" />
 					<label for="mc">MasterCard</label>
 					<!-- STEP 7: Add a radio button INPUT for VISA, including a unique id and the same name/value as the two INPUTs above -->
-
-
+					<input type="radio" name="ccType" id="visa" value="visa" />
+					<label for="visa">VISA</label>
 					<div>
 						<label for="ccNumber">Credit Card Number</label>
 						<input id="ccNumber" type="text" name="ccNumber" />
@@ -72,7 +72,12 @@
 					<div>
 						<label for="ccYear">Expiration Year</label>
 						<!-- STEP 6: Construct a SELECT element containing OPTION elements for the Expiration Year of the credit card -->
-
+						<select id="ccYear" name="ccYear">
+							<option value="2021">2021</option>
+							<option value="2022">2022</option>
+							<option value="2023">2023</option>
+							<option value="2024">2024</option>
+						</select>
 					</div>
 					<div>
 						<label for="ccMonth">Expiration Month</label>
@@ -99,7 +104,8 @@
 					<input type="checkbox" name="comm[]" id="comm2" value="Phone" />
 					<label for="comm2">Phone</label>
 					<!-- STEP 8: Add another check box INPUT (for Text Message) with a unique id value, but use the same name value as the above INPUT - remember to add a LABEL, too -->
-
+					<input type="checkbox" name="comm[]" id="comm3" value="SMS" />
+					<label for="comm3">Text Message (SMS)</label>
 
 				</fieldset>
 				<fieldset>
