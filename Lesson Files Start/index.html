@@ -18,19 +18,22 @@
 		<main>
 			<h2>Edit Payment Information</h2>
 			<!-- STEP 1: Set the action attribute for the FORM, and set the method attribute to 'get' -->
-			<form>
+			<form action="process-form.php" method="get">
 				<!-- STEP 4: Add a FIELDSET and LEGEND element to encapsulate the Personal Information fields -->
 
 
 					<!-- STEP 2a: Build an INPUT and a LABEL element for First Name - include type, name, id, size, and placeholder attributes -->
 					<div>
-
-
+						<label for="fname">First Name</label>
+						<input type="text" name="fname" id="fname" size="25" maxlength="50" placeholder="Type First Name Here"/>
 					</div>
 					<!-- STEP 13: Use basic browser validation to ensure that the user at least provides a First Name - use the required attribute on the above INPUT element, then try to submit the form -->
 					<!-- STEP 2b: Using the above elements as a template, create a similar LABEL and INPUT for Last Name -->
 					<div>
-
+							<label for="lname">Last Name</label>
+							<input type="text" name="lname" id="lname" size="25" maxlength="50" placeholder="Type Last Name Here"/>
+	
+					</div>
 
 					</div>
 					<!-- STEP 14: Set a maxlength attribute on the above Last Name INPUT element - this physically restricts the user from entering any more than the desired number of characters (maybe 50?), which is a sort of pre-emptive validation -->
