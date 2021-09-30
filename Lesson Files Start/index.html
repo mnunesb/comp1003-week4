@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<title>Edit Payment Information - PayDude™</title>
 		<!-- STEP 5: Add a LINK element pointing to the provided CSS to style the form -->
-
+		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
 		<header>
@@ -20,8 +20,8 @@
 			<!-- STEP 1: Set the action attribute for the FORM, and set the method attribute to 'get' -->
 			<form action="process-form.php" method="get">
 				<!-- STEP 4: Add a FIELDSET and LEGEND element to encapsulate the Personal Information fields -->
-
-
+				<fieldset>
+					<legend>Personal Information</legend>
 					<!-- STEP 2a: Build an INPUT and a LABEL element for First Name - include type, name, id, size, and placeholder attributes -->
 					<div>
 						<label for="fname">First Name</label>
@@ -39,19 +39,22 @@
 					<!-- STEP 14: Set a maxlength attribute on the above Last Name INPUT element - this physically restricts the user from entering any more than the desired number of characters (maybe 50?), which is a sort of pre-emptive validation -->
 					<!-- STEP 3: Create LABEL and INPUT pairs below for Phone, Email, and Password -->
 					<div>
-
+						<label for="phone">Phone</label>
+						<input type="tel" id="phone" name="phone"/>
 
 					</div>
 					<!-- STEP 15: Add a pattern attribute that checks to see if the end user has entered the information in the right format - add pattern="[0-9]{3}[ -][0-9]{3}[ -][0-9]{4}" to the above phone INPUT element (checks to see that the number is in the format 000-000-0000 with dashes or spaces) -->
 					<div>
-
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email"/>
 
 					</div>
 					<div>
-
+						<label for="password">Password</label>
+						<input type="password" name="password" id="password"/>
 
 					</div>
-
+				</fieldset>
 				<fieldset>
 					<legend>Credit Card Details</legend>
 					<input type="radio" name="ccType" id="amex" value="American Express" />
